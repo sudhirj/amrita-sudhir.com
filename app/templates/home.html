@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Amrita &amp; Sudhir : We're Getting Married!{% endblock %}
+{% block content %}
+<header>
+	<h1>Sudhir &amp; Amrita</h1>
+	<img class="right" src="/static/lu.jpg"/>
+	<img class="left" src="/static/su.jpg"/>
+</header>
+<div id="main" role="main">
+	<p>Are Getting Married!</p>
+	<p>
+		And we'd love it if you could be there on
+		<br/>
+		<time class="main" date="2012-02-06">
+			Monday, the 6 <sup>th</sup>
+			of February, 2012
+		</time>
+	</p>
+	<div id="locations">
+		<div class="topbar">
+			<div class="location">
+				<h3>Wedding</h3>
+				<time datetime="2012-02-06T16:30-17:30">4:30 PM</time>
+				<address>
+					St. Andrew's Chruch (The Kirk),
+					<br/>
+					Poonamallee High Road,
+					<br/>
+					Chennai - 8
+				</address>
+				<div class="map">
+					<img src="http://maps.google.com/maps/api/staticmap?center=13.079813,80.264225&zoom=15&markers=size:mid|color:white|13.079619,80.264094|13.062861,80.261650&size=650x275&sensor=false"/>
+				</div>
+			</div>
+			<div class="location">
+				<h3>Reception</h3>
+				<time datetime="2012-02-06T19:00-21:30">7:00 PM</time>
+				<address>
+					Taj Connemara,
+					<br/>
+					Binny Road,
+					<br/>
+					Chennai - 2
+				</address>
+				<div class="map right">
+					<img src="http://maps.google.com/maps/api/staticmap?center=13.063384,80.261436&zoom=15&markers=size:mid|color:white|13.079619,80.264094|13.062861,80.261650&size=650x275&sensor=false"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+			
+{% block footer %}
+<footer>
+	<a href="/faq">click here for important information!</a>
+</footer>
+{% endblock %}

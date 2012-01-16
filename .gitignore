@@ -3,3 +3,6 @@ bin/
 eggs/
 var/
 app/lib/dist
+app/static/css/.sass-cache
+*.pyc
+*.DS_Store

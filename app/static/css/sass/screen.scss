@@ -1,0 +1,145 @@
+@import "normalize";
+@import "compass/css3";
+
+$c1: rgba(65,32,32,01);
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(/static/washi.png);
+	font-family: 'Lobster Two';
+	font-size: 16px;
+	margin-bottom: 2.618em;
+	padding: 0;
+	color: #015965;
+}
+
+a, a:visited, a:active{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;	
+}
+
+#container {
+	width: 40rem;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(255,255,255, 0.618);
+	padding: 1.618em 2.618em 2.618em;
+	@include border-bottom-radius(0.618em);	
+
+}
+
+header {
+	font-family: 'Lobster';
+	font-size: 2.618em;
+	position: relative;
+	z-index: 2;	
+	h1 {
+		z-index: 2;
+		position: relative;
+		color: $c1;
+		@include single-text-shadow(#fff, 0, 0, 8px);
+	}
+	img {
+		z-index: 1;
+		width: 17.1875rem;
+		position: absolute;
+		@include border-radius(0.381em);
+		&.left{
+			left: -180px;			
+			top: 0px;
+			@include rotate(-20deg);
+		}
+		&.right {
+			right: -200px;
+			top: 25px;
+			@include rotate(20deg);
+		}
+	}
+}
+
+#main {
+	font-size: 1.618em;
+	p {
+		margin-bottom: 2.618em;
+	}
+	time.main {
+		font-weight: bold;
+		color: $c1;
+		margin: 0.618em 0;
+		display: block;
+	}
+}
+
+#locations {
+	.topbar {
+		display: table;		
+		width: 100%;
+		div.location{
+			position: relative;
+			h3{
+				margin: 0;
+			}
+			display: table-cell;
+			width: 50%;
+			text-align: center;
+			address{
+				font-size: 1.618rem;
+			}
+			@include transition-property(all);
+			@include transition-duration(0.5s);
+			.map {				
+				position: absolute;
+				top: -800px;
+				&.right {
+					right: 0;					
+				}				
+				@include border-radius(0.381em);										
+				@include opacity(0.3);				
+				@include transition-duration(0.5s);
+				@include transition-property(all);	
+				width: 650px;
+				height: 275px;
+			}
+				
+			&:hover{
+				color: $c1;
+				.map {	
+					top: -285px;																		
+					@include opacity(1);											
+				}
+			}
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	font-size: 1.618rem;
+	margin-top: 1.618em;
+}
+
+h1 {
+	color: $c1;
+}
+dl {
+	margin: 2.618em 0;
+	font-size: 1.381em;
+	hr {
+		margin: 1.618em auto;
+		color: $c1;
+		width: 50%;		
+	}
+	dt {
+		color: $c1;
+		font-weight: bold;
+		margin-bottom: 0.618em;
+	}
+}
