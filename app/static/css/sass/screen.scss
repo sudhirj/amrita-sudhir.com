@@ -11,7 +11,7 @@ html {
 body {
 	background: url(/static/washi.png);
 	font-family: 'Lobster Two';
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 2.618em;
 	padding: 0;
 	color: #015965;
@@ -45,7 +45,7 @@ header {
 		z-index: 2;
 		position: relative;
 		color: $c1;
-		@include single-text-shadow(#fff, 0, 0, 8px);
+		@include single-text-shadow(#fff, 0, 0, 0.3em);
 	}
 	img {
 		z-index: 1;
@@ -53,13 +53,13 @@ header {
 		position: absolute;
 		@include border-radius(0.381em);
 		&.left{
-			left: -180px;			
-			top: 0px;
+			left: -11rem;			
+			top: 0;
 			@include rotate(-20deg);
 		}
 		&.right {
-			right: -200px;
-			top: 25px;
+			right: -10rem;
+			top: 1.5625rem;
 			@include rotate(20deg);
 		}
 	}
@@ -97,7 +97,7 @@ header {
 			@include transition-duration(0.5s);
 			.map {				
 				position: absolute;
-				top: -800px;
+				top: -50rem;
 				&.right {
 					right: 0;					
 				}				
@@ -105,14 +105,15 @@ header {
 				@include opacity(0.3);				
 				@include transition-duration(0.5s);
 				@include transition-property(all);	
-				width: 650px;
-				height: 275px;
+				img {
+					width: 40rem;
+				}				
 			}
 				
 			&:hover{
 				color: $c1;
 				.map {	
-					top: -285px;																		
+					top: -17.4rem;																		
 					@include opacity(1);											
 				}
 			}

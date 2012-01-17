@@ -450,7 +450,7 @@ html {
 body {
   background: url(/static/washi.png);
   font-family: 'Lobster Two';
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 2.618em;
   padding: 0;
   color: #015965;
@@ -498,7 +498,7 @@ header h1 {
   z-index: 2;
   position: relative;
   color: #412020;
-  text-shadow: white 0 0 8px;
+  text-shadow: white 0 0 0.3em;
 }
 /* line 50, ../sass/screen.scss */
 header img {
@@ -513,8 +513,8 @@ header img {
 }
 /* line 55, ../sass/screen.scss */
 header img.left {
-  left: -180px;
-  top: 0px;
+  left: -11rem;
+  top: 0;
   -webkit-transform: rotate(-20deg);
   -moz-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
@@ -523,8 +523,8 @@ header img.left {
 }
 /* line 60, ../sass/screen.scss */
 header img.right {
-  right: -200px;
-  top: 25px;
+  right: -10rem;
+  top: 1.5625rem;
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
@@ -579,7 +579,7 @@ header img.right {
 /* line 98, ../sass/screen.scss */
 #locations .topbar div.location .map {
   position: absolute;
-  top: -800px;
+  top: -50rem;
   -webkit-border-radius: 0.381em;
   -moz-border-radius: 0.381em;
   -ms-border-radius: 0.381em;
@@ -595,48 +595,50 @@ header img.right {
   -moz-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
-  width: 650px;
-  height: 275px;
 }
 /* line 101, ../sass/screen.scss */
 #locations .topbar div.location .map.right {
   right: 0;
 }
-/* line 112, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
+#locations .topbar div.location .map img {
+  width: 40rem;
+}
+/* line 113, ../sass/screen.scss */
 #locations .topbar div.location:hover {
   color: #412020;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #locations .topbar div.location:hover .map {
-  top: -285px;
+  top: -17.4rem;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 footer {
   text-align: center;
   font-size: 1.618rem;
   margin-top: 1.618em;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 h1 {
   color: #412020;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 dl {
   margin: 2.618em 0;
   font-size: 1.381em;
 }
-/* line 135, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 dl hr {
   margin: 1.618em auto;
   color: #412020;
   width: 50%;
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 dl dt {
   color: #412020;
   font-weight: bold;
